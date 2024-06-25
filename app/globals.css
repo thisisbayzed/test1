@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+@layer utilities {
+  .main-container {
+    @apply w-full px-[123px] mx-auto;
+  }
+  .nav-links {
+    @apply tracking-[1.5px] font-poppines text-[14px]   text-secondary-black opacity-[80%] capitalize;
+  }
+  .tour-header-title {
+    @apply font-poppines text-[22px]  text-secondary-black font-semibold capitalize;
+  }
+}
+
+.main-link:hover > ul {
+  display: block;
+}
